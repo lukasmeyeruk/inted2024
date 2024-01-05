@@ -1,0 +1,639 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../03%20-%20Project%20Planning/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>Process Management - INTED2024</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#process-modelling" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="INTED2024" class="md-header__button md-logo" aria-label="INTED2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            INTED2024
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Process Management
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="INTED2024" class="md-nav__button md-logo" aria-label="INTED2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    INTED2024
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Abstract%20INTED%202024%2C%20Valencia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abstract
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Exercises
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Exercises
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01%20-%20Basics%20and%20Project%20Objectives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Objectives and Goal Setting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02%20-%20Stakeholders%20and%20project%20management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stakeholder Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03%20-%20Project%20Planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Planning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Process Management
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="process-modelling">Process Modelling</h1>
+<h1 id="case-study">Case Study</h1>
+<p>The whole course and all corresponding exercises are based on an overall <a href="block00_Case_Study_1hPush.pdf">case study</a> of a fictitious company named "1hPush". </p>
+<p>For this specific block there's an <a href="../pdf_documents/block04_exercise.pdf">extension to the case study</a> mentioned above that focuses on process management in particular process modelling.</p>
+<h1 id="exercise">Exercise</h1>
+<ul>
+<li>a. Read the extension of the case study 1hPush.</li>
+<li>b. Identify the described end-to-end process of 1hPush.</li>
+<li>c. Compile a detailed process schema including the following: process name, customer demand, process steps, and process goals.</li>
+</ul>
+<h2 id="exercise-a-b">Exercise a) - b)</h2>
+<h3 id="prompts">Prompts</h3>
+<ul>
+<li><strong>Base Know-How Level "Low"</strong>: Identify the described end-to-end process of 1hPush and compile a detailed process schema including the following: process name, customer demand, process steps, and process goals based on the following Transcript of the CEO: <em>&lt; copy &amp; paste extension of case study&gt;</em></li>
+<li><strong>Base Know-How Level "Medium":</strong>  You act as a project manager responsible for a project to document company wide processes and automate two administrative processes using a process automation software. Based on the following transcript of an interview with the CEO, identify work packages and activities for the project: <em>&lt; copy &amp; paste subset of extension of case study&gt;</em>. Create a table of all activities and add a column to link its predecessor activity. Order the activities chronologically.</li>
+<li><strong>Base Know-How Level "High":</strong> You act as a project manager responsible for a project to document company wide processes and automate two administrative processes using a process automation software. Based on the following transcript of an interview with the CEO, identify work packages and activities for the project: <em>&lt; copy &amp; paste subset of extension of case study&gt;</em>. Create a table of all activities and add a column to link its predecessor activity. Order the activities chronologically. Write the project activities using action verbs and concise but detailed phrases including resource responsibilities. Some activities are considered as operational activities because the do not relate to the project goals of documenting processes or automating administrative processes using process automation software. Exclude those operational activities from the table but list them further below in a separate table. </li>
+</ul>
+<h3 id="execution">Execution</h3>
+<details class="info">
+<summary>Prompt 1 (Executed on 2023-01-05)</summary>
+<p>Identify the described end-to-end process of 1hPush and compile a detailed process schema including the following: process name, customer demand, process steps, and process goals based on the following Transcript of the CEO: Transcript conversation with Sonja (CEO)</p>
+<p>When thinking about in which situations we have direct customer contact, I conclude that it is in the social media channels and, of course, in sales and then also in services.</p>
+<p>The market-driven development of our products is very important to me. It is essential that we are capable of developing new ideas that consider the demands of our customers. From this, we need to derive reasonable concepts for new products. We increasingly learn that many good ideas come from the different social media channels and we need to grasp those in a more structured way in the future. I believe that will lead to a new evaluation process to evaluate ideas and concepts. Still, we need to test the products before we introduce the production to the market. The product development is certainly partially automatable. For example, we do not need to count by hand how many ideas have received the best evaluation, if we aim for something like that in the future.</p>
+<p>Since our product development has become relatively complex, the head of products and innovation has received additional support. On the one hand, Marko from information management helps evaluate input and ideas, and, on the other hand, Heribert has just taken responsibility for prototyping and testing. Beyond, Christina is increasingly involved, since the products need to be available in the online shop and via the product configurator. Thus, the new online shop needs to be checked. When we offer a new product, we need to communicate it via the social media channels, but also Franziska and Michael need to become active.</p>
+<p>Our customers shall know how we implement new ideas and what innovative products we bring to the market.</p>
+</details>
+<details class="info">
+<summary>Prompt 1 Response</summary>
+<p>Based on the CEO's transcript, it seems that the described end-to-end process revolves around the development, testing, and introduction of innovative products, with a focus on customer demand and interaction through social media channels. Let's call this process "Innovative Product Development and Launch Process." Here's a detailed process schema for the 1hPush:</p>
+<p><strong>Process Name:</strong> Innovative Product Development and Launch Process (1hPush)</p>
+<p><strong>Customer Demand:</strong> Customer demands are identified through direct contact in social media channels, sales, and services. The goal is to develop new ideas that align with customer needs and preferences.</p>
+<p><strong>Process Steps:</strong></p>
+<ol>
+<li><strong>Idea Generation:</strong></li>
+<li>Subprocess: Monitor Social Media Channels</li>
+<li>Subprocess: Sales and Service Interactions</li>
+<li>
+<p>Subprocess: Market Research</p>
+</li>
+<li>
+<p><strong>Idea Evaluation:</strong></p>
+</li>
+<li>Subprocess: New Evaluation Process Establishment</li>
+<li>
+<p>Subprocess: Input and Ideas Evaluation by Marko (Information Management)</p>
+</li>
+<li>
+<p><strong>Concept Development:</strong></p>
+</li>
+<li>Subprocess: Derive Concepts for New Products</li>
+<li>
+<p>Subprocess: Concept Evaluation</p>
+</li>
+<li>
+<p><strong>Product Prototyping and Testing:</strong></p>
+</li>
+<li>Subprocess: Prototyping by Heribert</li>
+<li>
+<p>Subprocess: Testing by Heribert</p>
+</li>
+<li>
+<p><strong>Product Configuration and Online Shop Integration:</strong></p>
+</li>
+<li>Subprocess: Integration of Products in Online Shop and Configurator</li>
+<li>
+<p>Subprocess: Online Shop Verification by Christina</p>
+</li>
+<li>
+<p><strong>Product Launch and Marketing:</strong></p>
+</li>
+<li>Subprocess: Social Media Announcement</li>
+<li>
+<p>Subprocess: Activation of Franziska and Michael for Marketing</p>
+</li>
+<li>
+<p><strong>Post-Launch Monitoring:</strong></p>
+</li>
+<li>Subprocess: Monitor Customer Feedback</li>
+<li>Subprocess: Evaluate Sales Performance</li>
+</ol>
+<p><strong>Process Goals:</strong></p>
+<ol>
+<li>
+<p><strong>Customer-Centric Innovation:</strong> Ensure that product development is driven by customer demands identified through various channels.</p>
+</li>
+<li>
+<p><strong>Efficient Idea Evaluation:</strong> Establish a streamlined process for evaluating and selecting the most promising ideas for product development.</p>
+</li>
+<li>
+<p><strong>Conceptualization Efficiency:</strong> Derive reasonable concepts for new products efficiently, considering market-driven development.</p>
+</li>
+<li>
+<p><strong>Streamlined Prototyping and Testing:</strong> Improve efficiency in the prototyping and testing phase with support from relevant team members.</p>
+</li>
+<li>
+<p><strong>Smooth Online Integration:</strong> Ensure seamless integration of new products into the online shop and product configurator.</p>
+</li>
+<li>
+<p><strong>Effective Product Launch:</strong> Facilitate successful product launches through coordinated marketing efforts across social media channels and other platforms.</p>
+</li>
+<li>
+<p><strong>Post-Launch Evaluation:</strong> Monitor customer feedback and sales performance to continuously improve the product development and launch process.</p>
+</li>
+</ol>
+<p>This process aims to not only meet customer demands but also to optimize the internal workflows for innovation and product introduction, ensuring a holistic and customer-focused approach to the development and launch of new products.</p>
+</details>
+<details class="info">
+<summary>Prompt 2 (Executed on 2023-01-03)</summary>
+<p>You act as a process manager and you have to identify the described end-to-end process of 1hPush and compile a detailed process schema including the following: process name, customer demand, process steps, and process goals based on the following Transcript of the CEO: </p>
+<p>When thinking about in which situations we have direct customer contact, I conclude that it is in the social media channels and, of course, in sales and then also in services.</p>
+<p>The market-driven development of our products is very important to me. It is essential that we are capable of developing new ideas that consider the demands of our customers. From this, we need to derive reasonable concepts for new products. We increasingly learn that many good ideas come from the different social media channels and we need to grasp those in a more structured way in the future. I believe that will lead to a new evaluation process to evaluate ideas and concepts. Still, we need to test the products before we introduce the production to the market. The product development is certainly partially automatable. For example, we do not need to count by hand how many ideas have received the best evaluation, if we aim for something like that in the future.</p>
+<p>Since our product development has become relatively complex, the head of products and innovation has received additional support. On the one hand, Marko from information management helps evaluate input and ideas, and, on the other hand, Heribert has just taken responsibility for prototyping and testing. Beyond, Christina is increasingly involved, since the products need to be available in the online shop and via the product configurator. Thus, the new online shop needs to be checked. When we offer a new product, we need to communicate it via the social media channels, but also Franziska and Michael need to become active.</p>
+<p>Our customers shall know how we implement new ideas and what innovative products we bring to the market.</p>
+<p>Format the output in a table with the following rows: End to End Process name, Customer demand, process steps, process goals. </p>
+</details>
+<details class="info">
+<summary>Prompt 2 Response</summary>
+<p>Sure, based on the CEO's transcript, here's a detailed process schema for the 1hPush end-to-end process:</p>
+<table>
+<thead>
+<tr>
+<th>End to End Process Name</th>
+<th>Customer Demand</th>
+<th>Process Steps</th>
+<th>Process Goals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Market-Driven Product Development</td>
+<td>New and Innovative Products</td>
+<td>1. <strong>Customer Contact:</strong> Direct engagement on social media, sales, and services channels. <br> 2. <strong>Idea Generation:</strong> Identify and capture ideas from various social media channels. <br> 3. <strong>Concept Development:</strong> Derive reasonable concepts for new products based on customer demands. <br> 4. <strong>Idea Evaluation:</strong> Implement a structured evaluation process for ideas and concepts. <br> 5. <strong>Product Testing:</strong> Test products before introducing them to the market. <br> 6. <strong>Product Automation:</strong> Automate parts of the product development process to streamline tasks. <br> 7. <strong>Team Collaboration:</strong> Assign specific roles for evaluation, prototyping, testing, and online presence. <br> 8. <strong>Online Shop Verification:</strong> Ensure the new online shop is ready for new product launches. <br> 9. <strong>Communication:</strong> Actively communicate new products via social media channels and involve relevant team members. <br> 10. <strong>Customer Transparency:</strong> Ensure customers are informed about the implementation of new ideas and innovative products.</td>
+<td>1. Innovations that meet customer demands. <br> 2. Efficient capture and evaluation of ideas from social media. <br> 3. Streamlined concept development and testing process. <br> 4. Automation of repetitive tasks in product development. <br> 5. Effective collaboration among team members. <br> 6. Successful verification of the online shop. <br> 7. Timely and impactful communication of new products. <br> 8. Increased transparency for customers regarding product implementation.</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="info">
+<summary>Prompt 3 (Executed on 2023-01-03)</summary>
+<p>You act as a process manager and you have to identify the described end-to-end process of 1hPush and compile a detailed process schema including the following: process name, customer demand, process steps, and process goals based on the following Transcript of the CEO: </p>
+<p>"When thinking about in which situations we have direct customer contact, I conclude that it is in the social media channels and, of course, in sales and then also in services.</p>
+<p>The market-driven development of our products is very important to me. It is essential that we are capable of developing new ideas that consider the demands of our customers. From this, we need to derive reasonable concepts for new products. We increasingly learn that many good ideas come from the different social media channels and we need to grasp those in a more structured way in the future. I believe that will lead to a new evaluation process to evaluate ideas and concepts. Still, we need to test the products before we introduce the production to the market. The product development is certainly partially automatable. For example, we do not need to count by hand how many ideas have received the best evaluation, if we aim for something like that in the future.</p>
+<p>Since our product development has become relatively complex, the head of products and innovation has received additional support. On the one hand, Marko from information management helps evaluate input and ideas, and, on the other hand, Heribert has just taken responsibility for prototyping and testing. Beyond, Christina is increasingly involved, since the products need to be available in the online shop and via the product configurator. Thus, the new online shop needs to be checked. When we offer a new product, we need to communicate it via the social media channels, but also Franziska and Michael need to become active.</p>
+<p>Our customers shall know how we implement new ideas and what innovative products we bring to the market."</p>
+<p>Here are a few requirements that must be met when developing the content:
+- End to End Process Name: Must relate to a core process within the organization
+- Customer Demand: Write 1-2 sentences that customers want products that meet their needs and expectations.
+- Process Steps: Write actual process steps and avoid future state sentences such as "develop.. " or "implement..". Write the steps as if the process already exists and do not include names of people.
+- Process Goals: Make sure they are SMART</p>
+<p>Format the output in a table with the following rows: End to End Process name, Customer demand, process steps, process goals. </p>
+</details>
+<details class="info">
+<summary>Prompt 3 Response</summary>
+<table>
+<thead>
+<tr>
+<th><strong>End-to-End Process Name</strong></th>
+<th><strong>Customer Demand</strong></th>
+<th><strong>Process Steps</strong></th>
+<th><strong>Process Goals</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Market-Driven Product Development</td>
+<td>Customers expect products that align with their needs and preferences.</td>
+<td>1. Monitor and analyze social media channels for customer insights. <br><br>2. Collaborate with sales teams to gather customer feedback and demands. <br><br>3. Conduct regular brainstorming sessions for new product ideas. <br><br>4. Evaluate and prioritize product concepts based on customer input. <br><br>5. Develop prototypes for testing and refinement. <br><br>6. Automate product evaluation processes for efficiency. <br><br>7. Test products thoroughly before market introduction. <br><br>8. Coordinate with online shop management for product availability. <br><br>9. Plan and execute social media announcements for new products.</td>
+<td>1. Increase the capture of customer insights from social media by 20% within the next quarter. <br><br>2. Reduce product development cycle time by 15% through automation. <br><br>3. Achieve a product testing success rate of 95% to ensure quality. <br><br>4. Ensure 100% online availability of new products upon launch. <br><br>5. Enhance social media engagement by 25% through effective product communication.</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="evaluation">Evaluation</h2>
+<p>The evaluation of the response is done according to the following criteria:</p>
+<ul>
+<li><strong>Correct selection of End-to-End Process:</strong> The selected E2E-Process should be related to a core process of the organisation that depicts a specific sequence.</li>
+<li><strong>Definition of customer demand:</strong> Customer demand for a process is a clearly articulated expression of the expected output, encompassing specific features, qualities, or criteria essential to meet the needs of either an internal department or an external customer.</li>
+<li><strong>Quality and Selection of Process Steps:</strong> The quality and selection of process steps necessitate a meticulous reflection of the activities outlined in the transcript, ensuring clarity, precision, and conciseness to foster an effective and streamlined workflow.</li>
+<li><strong>Clear and relevant process goals:</strong> Process goals should be clear, measurable, achievable, relevant, and time-bound to provide a straightforward and tangible direction for a business process.</li>
+</ul>
+<p>The quality of the answers are compared to the tutor's reference solution and rated between 1 and 10 (1 = lowest quality compared to tutors exercise, 10 = highest quality compared to tutors exercise.)</p>
+<table>
+<thead>
+<tr>
+<th>Prompt</th>
+<th>Exercise d)</th>
+<th>Comment Exercise d)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Prompt 1 (Required Knowledge: Low)</strong></td>
+<td>6</td>
+<td>The process name is related to product development and captures the primary focus of the activities outline.<br><br>Customer Demand has been correctly identified. Despite it is described what the process does it also focuses on the goal of "... developing new ideas that align with customer needs and preferences". This description could be further elaborated and could also contain a better description of the customer profile, it reflects the primary point quite well.<br><br>The identification of process steps and underlying activities represents an elaborate and satisfactory list in the right sequential order. Some activities are mixed with project activities such as "New evaluation process establishment" and should be phrased as if the process is already implemented.<br><br>The process goals are not SMART but partly reflect the characteristics of process goals (i.e., not deliverable or product oriented).</td>
+</tr>
+<tr>
+<td><strong>Prompt 2 (Required Knowledge: Medium)</strong></td>
+<td>6</td>
+<td>The process name is related to product development and captures the primary focus of the activities outline.<br><br>Customer Demand has been correctly identified. Despite it is described what the process does it also focuses on the goal of "... developing new ideas that align with customer needs and preferences". This description could be further elaborated and could also contain a better description of the customer profile, it reflects the primary point quite well.<br><br>The identification of process steps and underlying activities represents an elaborate and satisfactory list in the right sequential order. Some activities are mixed with project activities such as "New evaluation process establishment" and should be phrased as if the process is already implemented.<br><br>The process goals are not SMART but partly reflect the characteristics of process goals (i.e., not deliverable or product oriented).<br><br>By adding a specific role and providing additional specification on the expected output, there's no significant increase in the quality of the response.</td>
+</tr>
+<tr>
+<td><strong>Prompt 3 (Required Knowledge: High)</strong></td>
+<td>9</td>
+<td>By providing precise instructions and requirements about the expected output, the quality of the response could be further improved. <br><br>The process name is related to product development and captures the primary focus of the activities outline. There's no improvement expected here.<br><br>The customer demand is now more elaborate and to the point. It explains well the need of the customer with regard to the product development process. <br><br>The process activities are now much more process oriented and, except of one activity, they do not contain any project activities. Furthermore, they are well written and do not contain any named resources in the activity. <br><br>The process goals are all SMART and encompass the characteristics of process goals as opposed to deliverable oriented project goals.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Overall observation:</strong> Although the initial response without any prior knowledge does provide a decent response to start with, it still contains a lot of formally wrong information (e.g., mix of project/process activities, process vs. project goals, etc.). By adding specific instructions the output can be improved and the quality increased. </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
